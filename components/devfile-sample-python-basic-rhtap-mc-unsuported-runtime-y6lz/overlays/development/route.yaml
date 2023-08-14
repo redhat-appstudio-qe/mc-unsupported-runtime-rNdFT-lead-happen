@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-python-basic-rhtap-mc-unsuported-runtime-y6lz
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-python-basic-rhtap-mc-unsuported-runtime-y6lz
+    app.kubernetes.io/part-of: mc-unsupported-runtime
+  name: devfile-sample-python-basa6nx
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: devfile-sample-python-basic-rhtap-mc-unsuported-runtime-y6lz
+    weight: null
+status: {}
